@@ -1,0 +1,38 @@
+// Category ids used by rules. `order` controls how groups are listed.
+export const CATEGORIES = {
+  cms: { label: "CMS", order: 1 },
+  pageBuilder: { label: "Page builders", order: 2 },
+  ecommerce: { label: "Ecommerce", order: 3 },
+  payments: { label: "Payments", order: 4 },
+  framework: { label: "JavaScript frameworks", order: 5 },
+  library: { label: "JavaScript libraries", order: 6 },
+  ui: { label: "UI frameworks", order: 7 },
+  fonts: { label: "Font scripts", order: 8 },
+  wpTheme: { label: "WordPress themes", order: 9 },
+  wpPlugin: { label: "WordPress plugins", order: 10 },
+  seo: { label: "SEO", order: 11 },
+  caching: { label: "Caching & performance", order: 12 },
+  analytics: { label: "Analytics", order: 13 },
+  tagManager: { label: "Tag managers", order: 14 },
+  marketing: { label: "Marketing", order: 15 },
+  advertising: { label: "Advertising", order: 16 },
+  video: { label: "Video players", order: 17 },
+  maps: { label: "Maps", order: 18 },
+  geolocation: { label: "Geolocation", order: 18.5 },
+  chat: { label: "Live chat", order: 19 },
+  widgets: { label: "Widgets", order: 20 },
+  consent: { label: "Cookie compliance", order: 21 },
+  security: { label: "Security", order: 22 },
+  monitoring: { label: "Monitoring", order: 23 },
+  cdn: { label: "CDN", order: 24 },
+  hosting: { label: "Hosting / Cloud", order: 25 },
+  baas: { label: "Backend as a service", order: 26 },
+  server: { label: "Web servers", order: 27 },
+  backend: { label: "Web frameworks", order: 28 },
+  language: { label: "Programming languages", order: 29 },
+  database: { label: "Databases", order: 30 },
+  build: { label: "Build tools", order: 31 },
+  misc: { label: "Miscellaneous", order: 32 }
+};
+
+export const categoryOf = (id) => CATEGORIES[id] ?? { label: id, order: 99 };
